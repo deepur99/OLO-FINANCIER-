@@ -1,0 +1,137 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-fluid {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+/* contact 1 Component============================ */
+
+.contact {
+    position: relative;
+}
+
+.contact h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contact p {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* 2nd component================================================== */
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo .box {
+    position: relative;
+    display: flex;
+}
+
+.contactInfo .box .text {
+    /* display: flex; */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contactInfo .box .text h4 {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+
+/* ContactForm=========================================================== */
+
+.contactForm {
+    border-radius: 20px;
+    padding: 40px;
+    background: lightyellow;
+}
+
+.contactForm h4 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    margin: 10px 0;
+    outline: none;
+    resize: none;
+    background: lightyellow;
+    border-bottom: 2px solid #333;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #e91e84;
+    font-size: 15px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    border: 0;
+    background: #00bcd4;
+    display: block;
+    /* margin: 20px auto; */
+    /* text-align: center; */
+    /* border: 2px solid #2ecc71; */
+    padding: 10px;
+    width: 100px;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+/* .contactForm .inputBox input[type="submit"]:focus {
+    width: 160px;
+    color: #2ecc71;
+} */
+
+.contactForm .inputBox input[type="submit"]:hover {
+    width: 120px;
+    transform: translateX(-10px);
+}
